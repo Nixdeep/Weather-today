@@ -78,9 +78,9 @@ const WMO_ICONS: Record<number, string> = {
   82: "cloud-showers-heavy",
   85: "snowflake",
   86: "snowflake",
-  95: "bolt",
-  96: "bolt",
-  99: "bolt",
+  95: "zap",
+  96: "zap",
+  99: "zap",
 };
 
 export function getWeatherDescription(code: number): string {
