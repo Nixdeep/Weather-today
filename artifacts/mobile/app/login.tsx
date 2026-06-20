@@ -129,9 +129,12 @@ export default function LoginScreen() {
               </LinearGradient>
             </Pressable>
 
-            <Text style={styles.hint}>
-              Use any email and password (4+ chars) to sign in
-            </Text>
+            <View style={styles.signupRow}>
+              <Text style={styles.signupPrompt}>Don't have an account?</Text>
+              <Pressable onPress={() => router.push("/signup")}>
+                <Text style={styles.signupLink}>Sign Up</Text>
+              </Pressable>
+            </View>
           </View>
         </View>
       </KeyboardAvoidingView>
@@ -257,11 +260,21 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     letterSpacing: 0.2,
   },
-  hint: {
-    fontSize: 12,
+  signupRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 4,
+    marginTop: 20,
+  },
+  signupPrompt: {
+    fontSize: 14,
     fontFamily: "Inter_400Regular",
     color: "#6B7FA3",
-    textAlign: "center",
-    marginTop: 16,
+  },
+  signupLink: {
+    fontSize: 14,
+    fontFamily: "Inter_600SemiBold",
+    color: "#1D6FD8",
   },
 });

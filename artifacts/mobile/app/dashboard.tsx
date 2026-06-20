@@ -43,7 +43,7 @@ function StatCard({ icon, label, value }: { icon: string; label: string; value: 
 }
 
 export default function DashboardScreen() {
-  const { logout, username } = useAuth();
+  const { logout, user } = useAuth();
   const insets = useSafeAreaInsets();
   const { weather, loading, error, searchCity, searchResults, searching, fetchWeather } =
     useWeather();
@@ -105,7 +105,7 @@ export default function DashboardScreen() {
         <View style={styles.topRow}>
           <View>
             <Text style={styles.greeting}>
-              Hi, {username.split("@")[0]} 👋
+              Hi, {user?.name?.split(" ")[0] ?? user?.email?.split("@")[0]} 👋
             </Text>
             <Text style={styles.subGreeting}>Check today's weather</Text>
           </View>
