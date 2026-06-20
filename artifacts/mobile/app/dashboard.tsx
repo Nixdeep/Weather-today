@@ -75,9 +75,9 @@ function LocationRow({ loc, isActive, onSelect, onRemove }: LocationRowProps) {
   return (
     <Pressable
       style={({ pressed }) => [
-        styles.locationRow,
-        isActive && styles.locationRowActive,
-        pressed && styles.locationRowPressed,
+        styles.savedLocRow,
+        isActive && styles.savedLocRowActive,
+        pressed && styles.savedLocRowPressed,
       ]}
       onPress={onSelect}
     >
@@ -597,13 +597,13 @@ const styles = StyleSheet.create({
   },
 
   locationsList: { maxHeight: SCREEN_HEIGHT * 0.4 },
-  locationRow: {
+  savedLocRow: {
     flexDirection: "row", alignItems: "center",
     backgroundColor: "#F8FAFF", borderRadius: 16,
     padding: 14, marginBottom: 8, gap: 12,
   },
-  locationRowActive: { backgroundColor: "#1D6FD8" },
-  locationRowPressed: { opacity: 0.85 },
+  savedLocRowActive: { backgroundColor: "#1D6FD8" },
+  savedLocRowPressed: { opacity: 0.85 },
   locationDot: { width: 10, height: 10, borderRadius: 5, backgroundColor: "#D0E2FF" },
   locationDotActive: { backgroundColor: "#FFFFFF" },
   locationInfo: { flex: 1 },
