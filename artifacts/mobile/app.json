@@ -7,12 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "deepsapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.deepsapp.app"
@@ -31,6 +25,14 @@
         }
       ],
       "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
       "expo-web-browser"
     ],
     "experiments": {

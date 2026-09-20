@@ -30,3 +30,8 @@ externalPort = 80
 [[ports]]
 localPort = 18115
 externalPort = 3000
+exposeLocalhost = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["glib", "nspr", "nss"]
