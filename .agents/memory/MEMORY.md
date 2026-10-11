@@ -1,1 +1,2 @@
 - [Expo SDK 57 upgrade notes](expo-sdk-57-upgrade.md) — SDK 57 requires splash settings through the splash-screen plugin and TypeScript 6 needs the existing baseUrl deprecation acknowledged.
+- [Expo Go device validation](expo-go-device-validation.md) — A web preview and Metro QR endpoint cannot substitute for a native device or simulator pass.
